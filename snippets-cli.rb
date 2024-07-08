@@ -5,24 +5,24 @@
 class SnippetsCli < Formula
   desc "Clean and simple code sharing"
   homepage "https://github.com/stevedylandev/snippets-cli"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/stevedylandev/snippets-cli/releases/download/v0.1.1/snippets-cli_Darwin_x86_64.tar.gz"
-      sha256 "f2dfa9dcde032ce5ffaa6df09fef90d3ff93500852173de327441841f6d354a0"
+      url "https://github.com/stevedylandev/snippets-cli/releases/download/v0.1.2/snippets-cli_Darwin_x86_64.tar.gz"
+      sha256 "9233a65aa700ed2c18d9d4bb40cc67cb14ed608b8393ebf6d84f32159b436292"
 
       def install
-        bin.install "snippets-cli"
+        bin.install "snip"
       end
     end
     on_arm do
-      url "https://github.com/stevedylandev/snippets-cli/releases/download/v0.1.1/snippets-cli_Darwin_arm64.tar.gz"
-      sha256 "b70dc1c953359b0dcf7f41822341284eb4a44cc665944bb32fc84b787898df1e"
+      url "https://github.com/stevedylandev/snippets-cli/releases/download/v0.1.2/snippets-cli_Darwin_arm64.tar.gz"
+      sha256 "a4e4f4e6b6caaf39381f6b0db649b1355eac5510548d51dcc37c1297cf76dcab"
 
       def install
-        bin.install "snippets-cli"
+        bin.install "snip"
       end
     end
   end
@@ -30,21 +30,21 @@ class SnippetsCli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stevedylandev/snippets-cli/releases/download/v0.1.1/snippets-cli_Linux_x86_64.tar.gz"
-        sha256 "407eb961a1f249d0048b1262366b6594296c0b5be54c19c50261fc2351057783"
+        url "https://github.com/stevedylandev/snippets-cli/releases/download/v0.1.2/snippets-cli_Linux_x86_64.tar.gz"
+        sha256 "bdef1a970bf93eac3e4f6cf57d63476b8daf5ee71bea2c181ff21d495d886f52"
 
         def install
-          bin.install "snippets-cli"
+          bin.install "snip"
         end
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stevedylandev/snippets-cli/releases/download/v0.1.1/snippets-cli_Linux_arm64.tar.gz"
-        sha256 "fcc95390dadf0d1a8401f86634df083fb8a2f20564c381059224a9e175b54bf9"
+        url "https://github.com/stevedylandev/snippets-cli/releases/download/v0.1.2/snippets-cli_Linux_arm64.tar.gz"
+        sha256 "9d8b94b89eb30386a5aaba8e0276c06363647feb52d8de892cf6e0561acd4171"
 
         def install
-          bin.install "snippets-cli"
+          bin.install "snip"
         end
       end
     end
